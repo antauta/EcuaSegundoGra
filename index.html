@@ -1,0 +1,47 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>IES Antauta - Juego de Ecuaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container" id="menu-principal">
+        <h1>IES ANTAUTA - MATEMATICA</h1>
+        <h2>JUEGO DE ECUACIONES</h2>
+        <div class="seleccion-tipo">
+            <button id="btn-primer-grado" class="opcion-tipo">Ecuaciones de Primer Grado</button>
+            <button id="btn-segundo-grado" class="opcion-tipo">Ecuaciones de Segundo Grado</button>
+        </div>
+    </div>
+
+    <div class="container juego-container" id="juego-primer-grado" style="display: none;">
+        <h1>IES ANTAUTA - MATEMATICA</h1>
+        <h2>ECUACIONES DE PRIMER GRADO</h2>
+        <div id="pregunta-container">
+            <p id="ecuacion" class="ecuacion-grande"></p>
+            <div id="opciones"></div>
+            <div id="resultado"></div>
+            <button id="siguiente-ecuacion" class="btn-siguiente" style="display: none;">Siguiente Ecuación</button>
+            <button id="volver-menu" class="btn-volver">Volver al Menú</button>
+        </div>
+        <div id="contador-ecuaciones">Ecuaciones: 0/10</div>
+    </div>
+
+    <div class="container juego-container" id="juego-segundo-grado" style="display: none;">
+        <h1>IES ANTAUTA - MATEMATICA</h1>
+        <h2>ECUACIONES DE SEGUNDO GRADO</h2>
+        <h3>Desarrollado por Yhakelin - Mabel</h3>
+        <div id="pregunta-container-segundo">
+            <p id="ecuacion-segundo" class="ecuacion-grande"></p>
+            <div id="opciones-segundo"></div>
+            <div id="resultado-segundo"></div>
+            <button id="siguiente-ecuacion-segundo" class="btn-siguiente" style="display: none;">Siguiente Ecuación</button>
+            <button id="volver-menu-segundo" class="btn-volver">Volver al Menú</button>
+        </div>
+        <div id="contador-ecuaciones-segundo">Ecuaciones: 0/10</div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
